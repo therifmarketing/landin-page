@@ -15,8 +15,8 @@ const WhatsAppIcon = () => (
 );
 
 // --- Reusable Components ---
-const CTAButton: React.FC<{ children: React.ReactNode, className?: string, href?: string }> = ({ children, className, href = "#pricing" }) => (
-    <a href={href} className={`inline-block text-center bg-primary-blue text-white font-bold tracking-wider uppercase py-4 px-8 rounded-lg shadow-lg hover:bg-sky-blue transition-all duration-300 transform hover:scale-105 ${className}`}>
+const CTAButton: React.FC<{ children: React.ReactNode, className?: string, href?: string }> = ({ children, className, href = "https://pay.cakto.com.br/534Mbmi" }) => (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={`inline-block text-center bg-primary-blue text-white font-bold tracking-wider uppercase py-4 px-8 rounded-lg shadow-lg hover:bg-sky-blue transition-all duration-300 transform hover:scale-105 ${className}`}>
         {children}
     </a>
 );
@@ -273,7 +273,7 @@ const Pricing = () => (
                         <li className="flex items-start"><CheckCircleIcon className="h-6 w-6 text-primary-blue mr-2 flex-shrink-0 mt-1" /> <span>Acesso vitalício.</span></li>
                         <li className="flex items-start"><CheckCircleIcon className="h-6 w-6 text-primary-blue mr-2 flex-shrink-0 mt-1" /> <span>7 dias Garantia.</span></li>
                     </ul>
-                    <CTAButton href="#pricing-basic" className="w-full mt-auto bg-slate-700 hover:bg-slate-800">Quero Essa Opção</CTAButton>
+                    <CTAButton href="https://pay.cakto.com.br/7XkBX6G" className="w-full mt-auto bg-slate-700 hover:bg-slate-800">Quero Essa Opção</CTAButton>
                 </div>
 
                 {/* Plano Completo */}
